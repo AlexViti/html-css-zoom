@@ -17,9 +17,13 @@ body {
 	color: white;
 }
 
+.btn:hover {
+	cursor: pointer;
+}
+
 /* Top buttons */
 
-.buttons {
+.top-buttons {
 	height: 4rem;
 
 	display: flex;
@@ -28,7 +32,7 @@ body {
 	padding: .3rem
 }
 
-.buttons .btn {
+.top-buttons .btn {
 	background-color: #4a4a4a;
 	font-size: .9rem;
 	padding: .3em;
@@ -36,15 +40,13 @@ body {
 	border-radius: .3em;
 }
 
-.btn:hover {
-	cursor: pointer;
-}
 
 /* Grid */
 
 main {
 	min-height: calc(100vh - 9rem);
-	padding-bottom: 5rem;
+	margin-bottom: 5rem;
+	padding-bottom: 2rem;
 	
 	display: flex;
 	flex-wrap: wrap;
@@ -55,7 +57,7 @@ main {
 .participant {
 	position: relative;
 	height: 140px;
-	margin: .3rem;
+	margin: .2rem;
 }
 
 .name {
@@ -83,4 +85,6 @@ footer {
 	left: 0;
 	background: var(--grey);
 	z-index: 1;
+
+	display: flex;
 }
