@@ -47,7 +47,7 @@ body {
 main {
 	min-height: calc(100vh - 9rem);
 	margin-bottom: 5rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 	
 	display: flex;
 	flex-wrap: wrap;
@@ -78,6 +78,8 @@ main {
 	font-weight: 900;
 }
 
+/* Footer */
+
 footer {
 	height: 5rem;
 	width: 100%;
@@ -95,17 +97,39 @@ footer {
 footer [class|='col'] {
 	display: flex;
 	text-align: center;
+	font-size: .9rem;
+}
+
+footer .btn {
+	margin-left: 1rem;
 }
 
 .end-meeting {
 	background-color: var(--light-gray);
-	line-height: 1rem;
+	line-height: 5rem;
 	color: red;
-	padding: 2rem;
+	padding: 0 1rem;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
 }
 
 footer .arrow::after {
 	content: "\f077";
 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
 	color: white;
+	font-size: .7rem;
+	margin-left: 1rem;
+}
+
+footer .btn i {
+	font-size: 1.6rem;
+	padding-bottom: .5rem;
+}
+
+.btn.green i{
+	color: #4bc800;
 }
