@@ -12,20 +12,25 @@ body {
 	background-color: black;
 }
 
+header {
+	height: 2rem;
+}
+
 /* Grid */
 
 main {
-	height: 100vh;
+	height: calc(100vh - 7rem);
 	
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
+	justify-content: center;
+	align-content: space-around;
 }
 
 .participant {
 	position: relative;
 	height: 143px;
+	margin: .3rem;
 }
 
 .name {
@@ -44,4 +49,8 @@ main {
 	content: '\f131';
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
+}
+
+footer {
+	height: 5rem;
 }
