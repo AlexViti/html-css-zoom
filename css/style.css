@@ -3,3 +3,45 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	background-color: black;
+}
+
+/* Grid */
+
+main {
+	height: 100vh;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.participant {
+	position: relative;
+	height: 143px;
+}
+
+.name {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+
+	padding: .4em;
+	background-color: #22222260;
+	
+	color: white;
+	font-size: .9rem;
+}
+
+.mute::before {
+	content: '\f131';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
