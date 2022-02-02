@@ -1,3 +1,7 @@
+:root {
+	--grey: #222222;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,26 +14,47 @@ html {
 
 body {
 	background-color: black;
+	color: white;
 }
 
-header {
-	height: 2rem;
+/* Top buttons */
+
+.buttons {
+	height: 4rem;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: .3rem
+}
+
+.buttons .btn {
+	background-color: #4a4a4a;
+	font-size: .9rem;
+	padding: .3em;
+	margin-left: .5em;
+	border-radius: .3em;
+}
+
+.btn:hover {
+	cursor: pointer;
 }
 
 /* Grid */
 
 main {
-	height: calc(100vh - 7rem);
+	min-height: calc(100vh - 9rem);
+	padding-bottom: 5rem;
 	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: space-around;
+	align-content: space-evenly;
 }
 
 .participant {
 	position: relative;
-	height: 143px;
+	height: 140px;
 	margin: .3rem;
 }
 
@@ -39,9 +64,8 @@ main {
 	left: 0;
 
 	padding: .4em;
-	background-color: #22222260;
+	background-color: #222222aa;
 	
-	color: white;
 	font-size: .9rem;
 }
 
@@ -53,4 +77,10 @@ main {
 
 footer {
 	height: 5rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: var(--grey);
+	z-index: 1;
 }
