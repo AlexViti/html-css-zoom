@@ -1,5 +1,6 @@
 :root {
 	--grey: #222222;
+	--light-gray: #4a4a4a;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
 }
 
 .top-buttons .btn {
-	background-color: #4a4a4a;
+	background-color: var(--light-gray);
 	font-size: .9rem;
 	padding: .3em;
 	margin-left: .5em;
@@ -87,4 +88,24 @@ footer {
 	z-index: 1;
 
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer [class|='col'] {
+	display: flex;
+	text-align: center;
+}
+
+.end-meeting {
+	background-color: var(--light-gray);
+	line-height: 1rem;
+	color: red;
+	padding: 2rem;
+}
+
+footer .arrow::after {
+	content: "\f077";
+	font-family: "Font Awesome 5 Free";
+	color: white;
 }
