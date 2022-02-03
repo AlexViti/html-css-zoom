@@ -70,12 +70,12 @@ main {
 	margin: .2rem;
 }
 
-.user-tile img {
+/* .user-tile img {
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
 	object-position: center;
-}
+} */
 
 .name {
 	position: absolute;
